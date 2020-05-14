@@ -1,54 +1,69 @@
-.position {
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    
+/* general stylesheet begins here! */
+
+:root {
+    --hue-neutral: 200;
+    --hue-correct: 0;
+    --hue-wrong: 145;
+
 }
 
-body {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center;
-    min-height: 100vh;
-    background: black;
-  }
-  
-  .button {
-    position: relative;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    background: #f72359;
-    padding: 1em 2em;
-    border: none;
-    color: white;
-    font-size: 1.2em;
-    cursor: pointer;
-    outline: none;
-    overflow: hidden;
-    border-radius: 100px;
-  }
-  .button span {
-    position: relative;
-    pointer-events: none;
-  }
-  .button::before {
-    --size: 0;
-    content: '';
-    position: absolute;
-    left: var(--x);
-    top: var(--y);
-    width: var(--size);
-    height: var(--size);
-    background: radial-gradient(circle closest-side, #4405f7, transparent);
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -webkit-transition: width .2s ease, height .2s ease;
-    transition: width .2s ease, height .2s ease;
-  }
-  .button:hover::before {
-    --size: 400px;
-  }
+.container {
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+.container:hover {
+  opacity: 0.9;
+  transition-timing-function: ease-in-out;
+  transition: 0.3s;
+
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 40pt;
+  line-height: 0cm;
+  margin-top: 4pt;
+}
+
+hr {
+  color: white;
+  border: solid;
+  line-height: 1pt;
+
+}
+
+p {
+  color: white;
+  font-weight: bold;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 20pt;
+  font-weight: lighter;
+}
+
+/* general stylesheet ends here! */
+
+/* stylesheet for case begins here! */
+
+.button {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  background-color: transparent;
+  border-color: white;
+  color: ghostwhite;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  border-radius: 12px;
+  float: right;
+}
+
+.button:hover {
+  opacity: 1;
+  background-image: url(colorful.jpg);
+  border-style: solid;
+}
