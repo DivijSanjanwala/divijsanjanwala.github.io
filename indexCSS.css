@@ -1,69 +1,182 @@
-/* general stylesheet begins here! */
-
-:root {
-    --hue-neutral: 200;
-    --hue-correct: 0;
-    --hue-wrong: 145;
-
-}
-
 .container {
+  float: left;
+  width: 50%;
+  height: 15cm;
   background-color: transparent;
-  opacity: 0.5;
 }
 
-.container:hover {
-  opacity: 0.9;
-  transition-timing-function: ease-in-out;
-  transition: 0.3s;
+.container-x {
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0px;
+  border: white;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+  height: 5cm;
+  width: auto;
+  background-color: white;
 
 }
 
-h1 {
-  color: white;
-  font-weight: bold;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 40pt;
-  line-height: 0cm;
-  margin-top: 4pt;
+
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 2pt;
 }
 
-hr {
-  color: white;
-  border: solid;
-  line-height: 1pt;
-
+.container-1, .container-2, .button-container {
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0px;
+  border: white;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 1cm;
+  margin-top: 1cm;
+  height: 8cm;
+  width: auto;
+  background-color: white;
 }
 
 p {
-  color: white;
-  font-weight: bold;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 20pt;
-  font-weight: lighter;
+  font-family: 'Allerta', sans-serif;
+  font-size: 11pt;
+  align-self: center;
 }
 
-/* general stylesheet ends here! */
+.blank-container {
+  height: 1cm;
+  width: 2cm;
+}
 
-/* stylesheet for case begins here! */
+body {
+  background-color: white;
+  font-family: 'Allerta', sans-serif;
+}
 
-.button {
-  font-family: 'Alegreya Sans SC', sans-serif;
-  background-color: transparent;
-  border-color: white;
-  color: ghostwhite;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  border-radius: 12px;
+
+.button-container {
+  height: 1cm;
+}
+
+.skills-container {
+  width: 50%;
+}
+
+
+.main-container {
   float: right;
+  width: 45%;
+  background-color: transparent;
+  border-style: none;
+  border-collapse: collapse;
 }
 
-.button:hover {
-  opacity: 1;
-  background-image: url(colorful.jpg);
-  border-style: solid;
+li {
+  position: relative;
+  list-style: none;
+  margin: 30px 0;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: rgba(54, 126, 223, .5);
+  border-radius: 1000px;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: rgba(54, 126, 223, 1);
+  border-radius: 1000px;
+  animation-duration: .7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+li.python:after {
+  animation-name: python;
+
+}
+
+@keyframes python {
+  to {
+    width: 90%;
+
+  }
+}
+
+li.COBOL:after {
+  animation-name: COBOL;
+
+}
+
+@keyframes COBOL {
+  to {
+    width: 90%;
+
+  }
+}
+
+li.java:after {
+  animation-name: java;
+
+}
+
+@keyframes java {
+  to {
+    width: 70%;
+
+  }
+}
+
+li.javascript:after {
+  animation-name: javascript;
+
+}
+
+@keyframes javascript {
+  to {
+    width: 90%;
+
+  }
+}
+
+li.html:after {
+  animation-name: html;
+
+}
+
+@keyframes html {
+  to {
+    width: 90%;
+
+  }
+}
+
+li.css:after {
+  animation-name: css;
+
+}
+
+@keyframes css {
+  to {
+    width: 90%;
+
+  }
 }

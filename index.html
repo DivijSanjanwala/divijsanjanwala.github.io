@@ -3,163 +3,50 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="indexCSS.css">
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&display=swap" rel="stylesheet">
+<script type="text/javascript" src="indexJavaScript.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet">
 
 
-<style>
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-image: url(colorful.jpg);
-    background-size: 1280px 1000px;
-}
-
-/* Slideshow container */
-
-.slideshow-container {
-  position: relative;
-  background: transparent;
-  margin-top: 1%;
-  margin-left: 3%;
-  height: 490px;
-  width: 1200px;
-  border-radius: 5px;
-  box-shadow: 0 0 20px 0px;
-  border: white;
-  border-style: solid;
-  border-width: 1px;
-
-}
-
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  transition: 0.6s ease;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-    text-align: center;
-    padding: 20px;
-    background: transparent;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-</style>
 </head>
 
 <body>
 
-<div class="slideshow-container">
-  <button class="button" style="margin-bottom: 10pt;">BI-WEEKLY ECONOMIC REVIEW</button>
-  <button class="button" style="margin-bottom: 10pt;">ARTICLES</button>
-  <button class="button" style="margin-bottom: 10pt;">PROJECTS</button>
-
-<div class="mySlides">
-  <div class="container">
-    <h1>Divij Sanjanwala</h1>
-    <hr></hr>
-    <p>University of Toronto 2019 - 2013</p>
-    <p>Contemplating towards the economic and technological conundrums while 
-      gaining constructive skills to satisfy my yearning to devise effective solutions.</p>
-    </div>
+<div class="container">
+    <div class="container-x"><p>I am keen towards analysing and contemplating 
+        towards the economic conundrums and yearn to develop solutions using technological skills. 
+        I strive to gain constructive skills in the fields of Machine Intelligence and Data Analytics 
+        that appeals to my pursuit of Finance and Economics. 
+        In addition, I am also passionate towards learning about 
+        Public Policy, political economics, and global affairs, thus I long to pursue it as well.</p></div>
+    <div class="container-x">
+        <div class="skills-container" style="float: left;">    
+        <ul style="padding-left: 3pt; padding-right: 3pt;">
+           <li class="python">Python</li>
+           <li class="COBOL">COBOL</li>
+           <li class="java">Java</li>
+       </ul>
+    </div>   
+    <div class="skills-container" style="float: right;">    
+        <ul style="padding-left: 3pt; padding-right: 3pt;">
+           <li class="javascript">JavaScript</li>
+           <li class="html">HTML</li>
+           <li class="css">CSS3</li>
+       </ul>
+    </div>   
+</div>
 </div>
 
-<div class="mySlides">
-  <p>But man is not made for defeat. A man can be destroyed but not defeated.</p>
+
+<div class="main-container">
+<div class="button-container">Button container</div>
+<h1>Click on the story to read</h1>
+<div class="container-1">
+    <div class='sk-ww-medium-publication-feed' data-embed-id='40308'></div>
+    <script src='https://www.sociablekit.com/app/embed/medium-publication-feed/widget.js' 
+    async defer></script>
 </div>
-
-<div class="mySlides">
-  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+<div class="container-2">Experince</div>
 </div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
 
 </body>
 </html> 
