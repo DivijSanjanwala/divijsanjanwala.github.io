@@ -311,7 +311,12 @@ li.css:after {
 .fa-github, .fa-linkedin, .fa-medium, .fa-mail-reply {
   background-color: rgba(255, 0, 101, 0.8);
   color: black;
+}
 
+@media screen and (max-width:99%) {
+  #container {
+    width: 100%;
+  }
 
 }
 
