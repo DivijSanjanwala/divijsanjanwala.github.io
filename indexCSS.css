@@ -11,7 +11,7 @@
   border-style: solid;
   border-width: 1px;
   margin-top: 1cm;
-  margin-bottom: 1cm;
+  margin-bottom: 1pt;
   height: 5cm;
   width: auto;
   background-color: white;
@@ -30,14 +30,13 @@
 
 .container-1, .container-2 {
   border-radius: 5px;
-  border: white;
-  border-style: solid;
+  border-style: none;
   border-width: 1px;
   margin-bottom: 1cm;
   margin-top: 1cm;
   height: 8cm;
   width: auto;
-  background-color: white;
+  background-color: transparent;
 }
 
 p {
@@ -53,7 +52,18 @@ p {
 
 body {
   background-image: url(colorful.jpg);
+  background-repeat: no-repeat;
+  background-size: 1320px 1400px;
   font-family: 'Allerta', sans-serif;
+}
+
+.name-container {
+  background-color: white;
+  height: auto;
+  width: 7cm;
+  color: black;
+  border-style: none;
+  border-collapse: collapse;
 }
 
 
@@ -63,8 +73,26 @@ body {
   border-collapse: collapse;
 }
 
+.icon-container {
+  background-color: transparent; 
+  color: white; 
+  height: auto;
+  width: auto;
+  border-style: none;
+  margin-bottom: 0pt;
+}
+
+.education {
+  border-radius: 3pt;
+  border: white;
+  border-style: solid;
+  width: 1cm;
+  height: 1cm;
+}
+
 .skills-container {
   width: 50%;
+  color: white;
 }
 
 
@@ -258,5 +286,33 @@ li.css:after {
           transform: scaleX(1);
   -webkit-transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
           transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+}
+
+/* Icon Pack Stylesheet */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  transition: width 1.5s, height 1.5s, transform 1.5s;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    width: 40px;
+    transform: rotate(360deg);
+    background-color:  rgba(255, 0, 101, 0.5);
+
+}
+
+.fa-github, .fa-linkedin, .fa-medium, .fa-mail-reply {
+  background-color: rgba(255, 0, 101, 0.8);
+  color: black;
+
+
 }
 
