@@ -298,14 +298,13 @@ li.css:after {
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
-  transition: width 1.5s, height 1.5s, transform 1.5s;
+  transition: width 1s, height 1s, transform 1s;
 }
 
 .fa:hover {
-    opacity: 0.7;
     width: 40px;
     transform: rotate(360deg);
-    background-color:  rgba(255, 0, 101, 0.5);
+    background-color:  rgba(255, 0, 101, 0.8);
 
 }
 
