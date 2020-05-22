@@ -156,7 +156,7 @@ li.COBOL:after {
 
 @keyframes COBOL {
   to {
-    width: 90%;
+    width: 75%;
 
   }
 }
@@ -180,7 +180,7 @@ li.javascript:after {
 
 @keyframes javascript {
   to {
-    width: 90%;
+    width: 50%;
 
   }
 }
@@ -237,7 +237,7 @@ li.css:after {
 }
 
 .btn--primary {
-  color: rgba(255, 0, 101, 0.55);
+  color: rgba(255, 0, 101, 0.7);
 }
 
 .btn--border {
@@ -263,7 +263,7 @@ li.css:after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 0, 101, 0.55);
+  background: rgba(255, 0, 101, 0.8);
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -319,4 +319,19 @@ li.css:after {
   }
 
 }
+
+.button {
+  background-color: rgba(255, 0, 101, 0.8);
+  border-radius: 3pt;
+  height: 100pt;
+  width: 150pt;
+  font-size: 15pt;
+  border-collapse: collapse;
+  border-style: none;
+  font-family: 'Allerta', sans-serif;
+  color: white;
+  margin-left: 0.5cm;
+  margin-bottom: 0.5cm;
+}
+
 
