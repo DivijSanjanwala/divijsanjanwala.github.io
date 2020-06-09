@@ -321,7 +321,7 @@ li.css:after {
 }
 
 .button {
-  background-color: rgba(255, 0, 101, 0.8);
+  background-color: white;
   border-radius: 3pt;
   height: 100pt;
   width: 150pt;
@@ -329,7 +329,7 @@ li.css:after {
   border-collapse: collapse;
   border-style: none;
   font-family: 'Allerta', sans-serif;
-  color: white;
+  color: black;
   margin-left: 0.5cm;
   margin-bottom: 0.5cm;
 }
