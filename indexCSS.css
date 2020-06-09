@@ -53,7 +53,7 @@ p {
 body {
   background-image: url(colorful.jpg);
   background-repeat: no-repeat;
-  background-size: 1320px 1400px;
+  background-size: 100%;
   font-family: 'Allerta', sans-serif;
 }
 
