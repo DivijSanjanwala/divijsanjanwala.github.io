@@ -173,12 +173,12 @@ li.java:after {
   }
 }
 
-li.javascript:after {
-  animation-name: javascript;
+li.sql:after {
+  animation-name: sql;
 
 }
 
-@keyframes javascript {
+@keyframes sql {
   to {
     width: 50%;
 
